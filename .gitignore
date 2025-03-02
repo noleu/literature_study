@@ -169,3 +169,8 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+.jupyter
+.idea
+.local
+*-pycharm-support-libs/
