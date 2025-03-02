@@ -1,0 +1,10 @@
+services:
+    jupyter-notebook-server:
+        image: quay.io/jupyter/scipy-notebook:2025-02-12
+        ports:
+            - "8888:8888"
+        volumes:
+            - .:/home/jovyan
+        environment:
+          - DOCKER_STACKS_JUPYTER_CMD=notebook
+        command: start-notebook.py --IdentityProvider.token=''
